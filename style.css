@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3e5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+
+#movie-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6a1b9a;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #4a0072;
+}
+
+.hidden {
+  display: none;
+}
+
+#movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: left;
+}
+
+#movie-list li {
+  padding: 10px;
+  margin-bottom: 6px;
+  background: #ede7f6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#movie-list li:hover {
+  background: #d1c4e9;
+}
+
+#movie-detail img {
+  width: 200px;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  #movie-form {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🎬 جستجوی فیلم</h1>
+
+  <div id="movie-form">
+    <input type="text" id="movie-name" placeholder="نام فیلم را وارد کنید">
+    <button id="search-btn">جستجو</button>
+  </div>
+
+  <div id="loading" class="hidden">در حال بارگذاری...</div>
+  <div id="error" class="hidden"></div>
+
+  <ul id="movie-list" class="hidden"></ul>
+
+  <div id="movie-detail" class="hidden">
+    <h2 id="title"></h2>
+    <p id="year"></p>
+    <p id="genre"></p>
+    <p id="rating"></p>
+    <img id="poster" src="" alt="Movie Poster">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
